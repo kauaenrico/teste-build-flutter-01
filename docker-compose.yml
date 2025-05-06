@@ -9,3 +9,9 @@ services:
       - ":8080"
     stdin_open: true
     tty: true
+    networks:
+      - net_private
+
+networks:
+  net_private:
+    external: true
